@@ -1,0 +1,10 @@
+^C:\USERS\DELL\ONEDRIVE\DESKTOP\RFFF\TASK_5\BUILD\WINDOWS\X64\CMAKEFILES\373F46AC9E954432473D22EC208F35F5\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/DELL/OneDrive/Desktop/rfff/task_5/windows -BC:/Users/DELL/OneDrive/Desktop/rfff/task_5/build/windows/x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/DELL/OneDrive/Desktop/rfff/task_5/build/windows/x64/task_5.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
